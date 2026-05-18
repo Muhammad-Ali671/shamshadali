@@ -1,10 +1,6 @@
 {
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" }
-  ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "dist/client/assets/$1" },
-    { "src": "/favicon.ico", "dest": "dist/client/favicon.ico" },
-    { "src": "/(.*)", "dest": "dist/server/server.js" }
+    { "src": "/favicon.ico", "dest": "dist/client/favicon.ico" }
   ]
 }
