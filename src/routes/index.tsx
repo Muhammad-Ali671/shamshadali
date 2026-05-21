@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import portrait from "@/assets/portrait.jpg";
 import logo1 from "@/assets/logo1.jpg";
 import logo2 from "@/assets/logo2.jpg";
@@ -32,16 +31,6 @@ import c3_2 from "@/assets/carousels/c3-2.jpg";
 import c3_3 from "@/assets/carousels/c3-3.jpg";
 import c3_4 from "@/assets/carousels/c3-4.jpg";
 import c3_5 from "@/assets/carousels/c3-5.jpg";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Shamshad Ali — Graphic Designer Portfolio" },
-      { name: "description", content: "Pakistan-based graphic designer specializing in branding, logos, social media designs, and creative print & digital solutions." },
-    ],
-  }),
-});
 
 const services = [
   { icon: "🎨", title: "Logo Design", desc: "Memorable brand marks that define identity and stand out across every touchpoint." },
@@ -85,7 +74,7 @@ const carousels = [
   },
 ];
 
-function Index() {
+export default function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
